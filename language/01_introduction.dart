@@ -17,7 +17,7 @@
  * variables
  * operators
  * if else , switch 
- * for , while , do while 
+ * for , while , do  while loop 
  * function 
  * OOP 
  *  - Class

@@ -33,7 +33,7 @@ void main() {
 
   // local operators
   a = 19;
-  bool condition = a < 20 || a == 18;
+  bool condition = a < 20 && a == 18;
   print(!condition);
 }
 

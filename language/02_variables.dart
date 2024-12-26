@@ -1,13 +1,13 @@
- void main() {
+void main() {
   int a = 2;
   double pi = 3.1415;
   int b = 3;
   int c = a + b;
-  String name = "Shahzad774@-";
+  String name = "shahzad@123";
   String department = 'sales';
   bool isMarried = false;
   List marks = [20, 10, 90, 95, 15, 100];
-  List friendsName = ["Muhtshim Daud","Zaid Munawar"];
+  List friendsName = ["Muhtshim Daud", "Zaid Munawar"];
 
   print(pi);
 }

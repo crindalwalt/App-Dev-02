@@ -17,29 +17,139 @@ void main() {
             Icon(Icons.more_vert),
           ],
         ),
-        body: Center(
-            child: Container(
-          padding: EdgeInsets.all(10),
-          margin: EdgeInsets.all(10),
-          decoration: BoxDecoration(
-            // color: Colors.deepOrange,
-            borderRadius: BorderRadius.circular(12),
-            image: DecorationImage(
-                image: NetworkImage("https://picsum.photos/300/200"),
-                fit: BoxFit.fill,),
-          ),
-          width: 200,
-          height: 50,
-          child: Center(
-            child: Text(
-              "Welcome to iMail",
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
+        body: Container(
+          width: double.infinity,
+          height: double.infinity,
+          padding: EdgeInsets.all(20),
+          color: const Color.fromARGB(255, 241, 231, 198),
+          child:  Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                margin: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.orangeAccent[100],
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                width: double.infinity,
+                padding: EdgeInsets.all(8.0),
+                child: Center(
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(
+                        Icons.home,
+                        color: Colors.black,
+                        size: 35,
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Text(
+                        "Home",
+                        style:
+                            TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
+                ),
               ),
-            ),
+
+              Container(
+                margin: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.orangeAccent[100],
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                width: double.infinity,
+                padding: EdgeInsets.all(8.0),
+                child: Center(
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(
+                        Icons.search,
+                        color: Colors.black,
+                        size: 35,
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Text(
+                        "Search",
+                        style:
+                            TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+
+              Container(
+                margin: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.orangeAccent[100],
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                width: double.infinity,
+                padding: EdgeInsets.all(8.0),
+                child: Center(
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(
+                        Icons.chat,
+                        color: Colors.black,
+                        size: 35,
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Text(
+                        "Chat",
+                        style:
+                            TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+
+              Container(
+                margin: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.orangeAccent[100],
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                width: double.infinity,
+                padding: EdgeInsets.all(8.0),
+                child: Center(
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(
+                        Icons.person,
+                        color: Colors.black,
+                        size: 35,
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Text(
+                        "Profile",
+                        style:
+                            TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+         
+              ],
           ),
-        )),
+        ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           child: Icon(Icons.add),

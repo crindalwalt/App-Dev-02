@@ -14,7 +14,7 @@ void main() {
   // function call
   // sum(1, 2, 4);total
   // tabler(12);
-  double result = getPercentage(901 );
+  double result = getPercentage(901 ,total: 1200);
   // print("The percentage is ${result}");
 
   getGrades(result);

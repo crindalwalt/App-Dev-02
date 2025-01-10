@@ -11,7 +11,6 @@ class StoryScreen extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -25,26 +24,52 @@ class StoryScreen extends StatelessWidget {
                 fit: BoxFit.cover,
               )),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10),
-              child: Text(
-                "A Lion and the Tressure",
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 10),
+                    child: Text(
+                      "A Lion and the Tressure",
+                      style:
+                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 10),
+                    child: Text(
+                        "A hightlight of the story of a curious lion on a tressure hunt along with some of his friends"),
+                  ),
+                  Row(
+                    children: [Icon(Icons.time_to_leave), Text("30 min read")],
+                  ),
+                  Row(
+                    children: [
+                      Icon(Icons.person),
+                      Text("Written by Shahzad Farooq")
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                    width: 150,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(10)
+                    ),
+                    child: Center(
+                      child: Text("Buy Now",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                    ),
+
+                  )
+                ],
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10),
-              child: Text(
-                  "A hightlight of the story of a curious lion on a tressure hunt along with some of his friends"),
-            ),
-            Row(
-              children: [Icon(Icons.time_to_leave), Text("30 min read")],
-            ),
-            Row(
-              children: [Icon(Icons.person), Text("Written by Shahzad Farooq")],
-            ),
-            const SizedBox(height: 10,),
-            ElevatedButton(onPressed: () {}, child: Text("Buy Now"))
+            )
           ],
         ),
       ),

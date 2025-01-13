@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class StoryScreen extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class StoryScreen extends StatelessWidget {
               height: 350,
               decoration: BoxDecoration(
                   image: DecorationImage(
-                image: NetworkImage("https://picsum.photos/300/300"),
+                image: AssetImage("assets/images/lion-and-tressure.webp"),
                 fit: BoxFit.cover,
               )),
             ),
@@ -34,8 +35,10 @@ class StoryScreen extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(vertical: 10),
                     child: Text(
                       "A Lion and the Tressure",
-                      style:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontFamily: "display",
+                          fontWeight: FontWeight.bold),
                     ),
                   ),
                   Padding(
@@ -44,7 +47,10 @@ class StoryScreen extends StatelessWidget {
                         "A hightlight of the story of a curious lion on a tressure hunt along with some of his friends"),
                   ),
                   Row(
-                    children: [Icon(Icons.time_to_leave), Text("30 min read")],
+                    children: [
+                      FaIcon(FontAwesomeIcons.clock),
+                      Text("30 min read"),
+                    ],
                   ),
                   Row(
                     children: [
@@ -59,13 +65,15 @@ class StoryScreen extends StatelessWidget {
                     width: 150,
                     height: 50,
                     decoration: BoxDecoration(
-                      color: Colors.blue,
-                      borderRadius: BorderRadius.circular(10)
-                    ),
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(10)),
                     child: Center(
-                      child: Text("Buy Now",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                      child: Text(
+                        "Buy Now",
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold),
+                      ),
                     ),
-
                   )
                 ],
               ),
